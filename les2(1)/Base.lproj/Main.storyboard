@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9h-gp-Sey">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -46,8 +46,53 @@
             </objects>
             <point key="canvasLocation" x="140" y="66.11694152923539"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Vue-iA-vrg">
+            <objects>
+                <viewController id="b9h-gp-Sey" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVg-fd-UVl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="798248243_Gtlockerup_e52a8a3f91306116f62cddcf659198ce.jpg.a17875159a4e470945c886389b9536dd" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-aZ-Nft">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="186" translatesAutoresizingMaskIntoConstraints="NO" id="K0k-Dn-hLd">
+                                <rect key="frame" x="46" y="544" width="283" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iO-Y0-HAG">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-fL-gms">
+                                        <rect key="frame" x="234" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tDY-3w-vFU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GdG-aZ-Nft" firstAttribute="top" secondItem="tDY-3w-vFU" secondAttribute="top" id="0bU-XE-nnw"/>
+                            <constraint firstItem="tDY-3w-vFU" firstAttribute="trailing" secondItem="K0k-Dn-hLd" secondAttribute="trailing" constant="46" id="1aC-9n-uey"/>
+                            <constraint firstItem="K0k-Dn-hLd" firstAttribute="leading" secondItem="tDY-3w-vFU" secondAttribute="leading" constant="46" id="4so-Z2-yv1"/>
+                            <constraint firstItem="K0k-Dn-hLd" firstAttribute="top" secondItem="GdG-aZ-Nft" secondAttribute="bottom" constant="99" id="HXJ-Lb-YXZ"/>
+                            <constraint firstItem="tDY-3w-vFU" firstAttribute="bottom" secondItem="GdG-aZ-Nft" secondAttribute="bottom" priority="990" constant="222" id="chB-bV-5Np"/>
+                            <constraint firstItem="GdG-aZ-Nft" firstAttribute="trailing" secondItem="tDY-3w-vFU" secondAttribute="trailing" id="nFn-R9-eNf"/>
+                            <constraint firstItem="tDY-3w-vFU" firstAttribute="bottom" secondItem="K0k-Dn-hLd" secondAttribute="bottom" constant="92" id="vhQ-7Q-xgQ"/>
+                            <constraint firstItem="GdG-aZ-Nft" firstAttribute="leading" secondItem="tDY-3w-vFU" secondAttribute="leading" id="y33-6f-S4c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ol4-Y9-PLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999.20000000000005" y="66.11694152923539"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="798248243_Gtlockerup_e52a8a3f91306116f62cddcf659198ce.jpg.a17875159a4e470945c886389b9536dd" width="2040" height="1336"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
